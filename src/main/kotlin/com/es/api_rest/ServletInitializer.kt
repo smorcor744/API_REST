@@ -1,4 +1,4 @@
-package com.es.aplicacion
+package com.es.api_rest
 
 import org.springframework.boot.builder.SpringApplicationBuilder
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer

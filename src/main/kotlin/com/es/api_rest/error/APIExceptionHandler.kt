@@ -1,7 +1,7 @@
-package com.es.aplicacion.error
+package com.es.api_rest.error
 
-import com.es.aplicacion.error.exception.BadRequestException
-import com.es.aplicacion.error.exception.UnauthorizedException
+import com.es.api_rest.error.exception.BadRequestException
+import com.es.api_rest.error.exception.UnauthorizedException
 import jakarta.servlet.http.HttpServletRequest
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.ControllerAdvice

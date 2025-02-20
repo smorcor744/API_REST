@@ -1,6 +1,6 @@
-package com.es.aplicacion.repository
+package com.es.api_rest.repository
 
-import com.es.aplicacion.model.Usuario
+import com.es.api_rest.model.Usuario
 import org.springframework.data.mongodb.repository.MongoRepository
 import org.springframework.stereotype.Repository
 import java.util.Optional

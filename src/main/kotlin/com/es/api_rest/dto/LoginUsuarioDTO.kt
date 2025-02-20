@@ -1,4 +1,4 @@
-package com.es.aplicacion.dto
+package com.es.api_rest.dto
 
 data class LoginUsuarioDTO(
     val username: String,

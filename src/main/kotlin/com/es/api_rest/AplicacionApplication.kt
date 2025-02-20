@@ -1,6 +1,6 @@
-package com.es.aplicacion
+package com.es.api_rest
 
-import com.es.aplicacion.security.RSAKeysProperties
+import com.es.api_rest.security.RSAKeysProperties
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication

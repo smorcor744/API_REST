@@ -1,19 +1,17 @@
-package com.es.aplicacion.service
+package com.es.api_rest.service
 
-import com.es.aplicacion.dto.UsuarioDTO
-import com.es.aplicacion.dto.UsuarioRegisterDTO
-import com.es.aplicacion.error.exception.BadRequestException
-import com.es.aplicacion.error.exception.UnauthorizedException
-import com.es.aplicacion.model.Usuario
-import com.es.aplicacion.repository.UsuarioRepository
-import com.mongodb.DuplicateKeyException
+import com.es.api_rest.dto.UsuarioDTO
+import com.es.api_rest.dto.UsuarioRegisterDTO
+import com.es.api_rest.error.exception.BadRequestException
+import com.es.api_rest.error.exception.UnauthorizedException
+import com.es.api_rest.model.Usuario
+import com.es.api_rest.repository.UsuarioRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.security.core.userdetails.User
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Service
-import kotlin.jvm.optionals.getOrNull
 
 @Service
 class UsuarioService : UserDetailsService {

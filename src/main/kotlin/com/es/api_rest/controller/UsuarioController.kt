@@ -1,11 +1,11 @@
-package com.es.aplicacion.controller
+package com.es.api_rest.controller
 
-import com.es.aplicacion.dto.LoginUsuarioDTO
-import com.es.aplicacion.dto.UsuarioDTO
-import com.es.aplicacion.dto.UsuarioRegisterDTO
-import com.es.aplicacion.error.exception.UnauthorizedException
-import com.es.aplicacion.service.TokenService
-import com.es.aplicacion.service.UsuarioService
+import com.es.api_rest.dto.LoginUsuarioDTO
+import com.es.api_rest.dto.UsuarioDTO
+import com.es.api_rest.dto.UsuarioRegisterDTO
+import com.es.api_rest.error.exception.UnauthorizedException
+import com.es.api_rest.service.TokenService
+import com.es.api_rest.service.UsuarioService
 import jakarta.servlet.http.HttpServletRequest
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
@@ -61,7 +61,7 @@ class UsuarioController {
 
         // SI PASAMOS LA AUTENTICACIÓN, SIGNIFICA QUE ESTAMOS BIEN AUTENTICADOS
         // PASAMOS A GENERAR EL TOKEN
-        var token = tokenService.generarToken(authentication)
+        val token = tokenService.generarToken(authentication)
 
         return ResponseEntity(mapOf("token" to token), HttpStatus.CREATED)
     }

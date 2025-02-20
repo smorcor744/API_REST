@@ -1,4 +1,4 @@
-package com.es.aplicacion.security
+package com.es.api_rest.security
 
 import com.nimbusds.jose.jwk.JWK
 import com.nimbusds.jose.jwk.JWKSet
