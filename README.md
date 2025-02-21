@@ -84,4 +84,4 @@ Representa una tarea asignada dentro del sistema.
 
 
 
-[Ver video](resources/Pruebas/prueba_desde_interfaz.mp4)
+[Ver video](./resources/Pruebas/prueba_desde_interfaz.mp4)
