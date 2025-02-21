@@ -56,11 +56,11 @@ class UsuarioService : UserDetailsService {
             //Comprobar email
 
             val usuario = Usuario(
-                null,
-                usuarioInsertadoDTO.username,
-                passwordEncoder.encode(usuarioInsertadoDTO.password),
-                usuarioInsertadoDTO.passwordRepeat,
-                usuarioInsertadoDTO.rol
+                _id = null,
+                username = usuarioInsertadoDTO.username,
+                email = usuarioInsertadoDTO.email,
+                password = passwordEncoder.encode(usuarioInsertadoDTO.password),
+                roles = usuarioInsertadoDTO.rol
             )
         usuarioRepository.insert(usuario)
         return UsuarioDTO(usuario.username, usuario.password,usuario.roles)
