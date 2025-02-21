@@ -27,10 +27,6 @@ class UsuarioController {
     @Autowired
     private lateinit var usuarioService: UsuarioService
 
-    @GetMapping("/hola")
-    fun hola(): String{
-        return "<h1>HOLA MUNDO</h1>"
-    }
 
     @PostMapping("/register")
     fun insert(

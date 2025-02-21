@@ -23,7 +23,7 @@ class UsuarioService : UserDetailsService {
 
 
     override fun loadUserByUsername(username: String?): UserDetails {
-        var usuario: Usuario = usuarioRepository
+        val usuario: Usuario = usuarioRepository
             .findByUsername(username!!)
             .orElseThrow {
                 UnauthorizedException("$username no existente")
