@@ -41,8 +41,6 @@ class UsuarioController {
             ResponseEntity<UsuarioDTO>(newUsuario, HttpStatus.CREATED)
         } else ResponseEntity<UsuarioDTO>(null, HttpStatus.INTERNAL_SERVER_ERROR)
 
-
-
     }
 
     @PostMapping("/login")
