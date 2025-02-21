@@ -87,4 +87,36 @@ Representa una tarea asignada dentro del sistema.
 ## PRUEBAS GESTIÓN USUARIOS
 Aquí puedes ver una demostración del proyecto:
 
-![Demo del proyecto](./resources/Pruebas/Prueba_AP.gif)
+![Descripción de la imagen](resources/pruebas/loginG.png)
+
+![Descripción de la imagen](resources/pruebas/loginG1.png)
+
+
+![Descripción de la imagen](resources/pruebas/loginB.png)
+
+
+![Descripción de la imagen](resources/pruebas/loginB1.png)
+
+
+![Descripción de la imagen](resources/pruebas/loginB2.png)
+
+
+![Descripción de la imagen](resources/pruebas/loginB3.png)
+
+
+![Descripción de la imagen](resources/pruebas/registerG.png)
+
+
+![Descripción de la imagen](resources/pruebas/registerG1.png)
+
+
+![Descripción de la imagen](resources/pruebas/registerB.png)
+
+
+![Descripción de la imagen](resources/pruebas/registerB1.png)
+
+
+![Descripción de la imagen](resources/pruebas/registerB2.png)
+
+
+![Descripción de la imagen](resources/pruebas/registerB3.png)
