@@ -63,7 +63,7 @@ class UsuarioService : UserDetailsService {
                 roles = usuarioInsertadoDTO.rol
             )
         usuarioRepository.insert(usuario)
-        return UsuarioDTO(usuario.username, usuario.password,usuario.roles)
+        return UsuarioDTO(usuario.username, usuario.email,usuario.roles)
 
     }
 }
