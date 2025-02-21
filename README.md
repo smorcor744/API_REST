@@ -82,41 +82,65 @@ Representa una tarea asignada dentro del sistema.
 3. **Cifrado de Contraseñas:** Las contraseñas se almacenan de forma cifrada utilizando algoritmos seguros como bcrypt.
 4. **Validación de Datos:** Validación exhaustiva de los datos recibidos en las solicitudes para evitar inyecciones y datos malformados.
 
+## Excepciones y Códigos de Estado
+
+1. **400 Bad Request:** Se genera cuando faltan campos requeridos o los datos son inválidos.
+2. **401 Unauthorized:** Se genera cuando un usuario no autenticado intenta acceder a recursos protegidos.
+3. **403 Forbidden:** Se genera cuando un usuario intenta acceder o modificar recursos que no le pertenecen.
+4. **404 Not Found:** Se genera cuando no se encuentra un recurso solicitado (por ejemplo, una tarea).
+5. **500 Internal Server Error:** Se genera cuando ocurre un error inesperado en el servidor.
+
 
 
 ## PRUEBAS GESTIÓN USUARIOS
 Aquí puedes ver una demostración del proyecto:
 
+Primero ingresamos los valores correctos para el login
+
+![Descripción de la imagen](src/main/resources/pruebas/loginG.png)
+
+Como respuesta exitosa nos da el token
+
+![Descripción de la imagen](src/main/resources/pruebas/loginG1.png)
+
+Ahora ingresamos la contraseña mal
+
 ![Descripción de la imagen](src/main/resources/pruebas/loginB.png)
 
-![Descripción de la imagen](resources/pruebas/loginG1.png)
+Como los valores no son correctos nos da una excepcion de mensaje
+
+![Descripción de la imagen](src/main/resources/pruebas/loginB1.png)
+
+Ahora ingresamos el usuario mal
 
 
-![Descripción de la imagen](resources/pruebas/loginB.png)
+![Descripción de la imagen](src/main/resources/pruebas/loginB2.png)
+
+Como los valores no son correctos nos da una excepcion de mensaje
 
 
-![Descripción de la imagen](resources/pruebas/loginB1.png)
+![Descripción de la imagen](src/main/resources/pruebas/loginB3.png)
 
 
-![Descripción de la imagen](resources/pruebas/loginB2.png)
+Ingresamos un nuevo usuario para registrarlo
+
+![Descripción de la imagen](src/main/resources/pruebas/registerG.png)
+
+Nos da el mensaje que se a registrado con éxito
+
+![Descripción de la imagen](src/main/resources/pruebas/registerG1.png)
+
+Si lo intentamos volver a registrar nos da este error
+
+![Descripción de la imagen](src/main/resources/pruebas/registerB.png)
+
+Ahora le cambiamos la contraseña para que no coincidan y también le cambiamos el nombre para que no del mensaje de antes
+
+![Descripción de la imagen](src/main/resources/pruebas/registerB1.png)
 
 
-![Descripción de la imagen](resources/pruebas/loginB3.png)
+![Descripción de la imagen](src/main/resources/pruebas/registerB2.png)
 
+Y nos da este error 
 
-![Descripción de la imagen](resources/pruebas/registerG.png)
-
-
-![Descripción de la imagen](resources/pruebas/registerG1.png)
-
-
-![Descripción de la imagen](resources/pruebas/registerB.png)
-
-
-![Descripción de la imagen](resources/pruebas/registerB1.png)
-
-
-![Descripción de la imagen](resources/pruebas/registerB2.png)
-
-
-![Descripción de la imagen](resources/pruebas/registerB3.png)
+![Descripción de la imagen](src/main/resources/pruebas/registerB3.png)
