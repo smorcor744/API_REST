@@ -87,7 +87,7 @@ Representa una tarea asignada dentro del sistema.
 ## PRUEBAS GESTIÓN USUARIOS
 Aquí puedes ver una demostración del proyecto:
 
-![Descripción de la imagen](resources/pruebas/loginG.png)
+![Descripción de la imagen](src/main/resources/pruebas/loginB.png)
 
 ![Descripción de la imagen](resources/pruebas/loginG1.png)
 
