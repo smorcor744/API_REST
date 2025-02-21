@@ -84,7 +84,7 @@ Representa una tarea asignada dentro del sistema.
 
 
 
-## Demo del proyecto
+## PRUEBAS GESTIÓN USUARIOS
 Aquí puedes ver una demostración del proyecto:
 
 ![Demo del proyecto](./resources/Pruebas/Prueba_AP.gif)
