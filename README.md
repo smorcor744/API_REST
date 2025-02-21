@@ -84,4 +84,7 @@ Representa una tarea asignada dentro del sistema.
 
 
 
-[Ver video](./resources/Pruebas/prueba_desde_interfaz.mp4)
+## Demo del proyecto
+Aquí puedes ver una demostración del proyecto:
+
+![Demo del proyecto](./resources/Pruebas/Prueba_AP.gif)
