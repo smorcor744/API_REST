@@ -41,7 +41,7 @@ class UsuarioService : UserDetailsService {
 
             if (usuarioInsertadoDTO.username.isBlank() || usuarioInsertadoDTO.password.isBlank() || usuarioInsertadoDTO.passwordRepeat.isBlank()) throw BadRequestException("Uno o más campos vacios")
 
-            if (usuarioRepository.findByUsername(usuarioInsertadoDTO.username).isEmpty) {
+            if (!usuarioRepository.findByUsername(usuarioInsertadoDTO.username).isEmpty) {
                 throw Exception("Usuario ${usuarioInsertadoDTO.username} existente")
             }
 
