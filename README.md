@@ -93,54 +93,132 @@ Representa una tarea asignada dentro del sistema.
 
 
 ## PRUEBAS GESTIÓN USUARIOS
-Aquí puedes ver una demostración del proyecto:
+### Aquí puedes ver una demostración del proyecto:
 
-Primero ingresamos los valores correctos para el login
+#### Primero ingresamos los valores correctos para el login
 
 ![Descripción de la imagen](src/main/resources/pruebas/loginG.png)
 
-Como respuesta exitosa nos da el token
+#### Como respuesta exitosa nos da el token
 
 ![Descripción de la imagen](src/main/resources/pruebas/loginG1.png)
 
-Ahora ingresamos la contraseña mal
+#### Ahora ingresamos la contraseña mal
 
 ![Descripción de la imagen](src/main/resources/pruebas/loginB.png)
 
-Como los valores no son correctos nos da una excepcion de mensaje
+#### Como los valores no son correctos nos da una excepcion de mensaje
 
 ![Descripción de la imagen](src/main/resources/pruebas/loginB1.png)
 
-Ahora ingresamos el usuario mal
+#### Ahora ingresamos el usuario mal
 
 
 ![Descripción de la imagen](src/main/resources/pruebas/loginB2.png)
 
-Como los valores no son correctos nos da una excepcion de mensaje
+#### Como los valores no son correctos nos da una excepcion de mensaje
 
 
 ![Descripción de la imagen](src/main/resources/pruebas/loginB3.png)
 
 
-Ingresamos un nuevo usuario para registrarlo
+#### Ingresamos un nuevo usuario para registrarlo
 
 ![Descripción de la imagen](src/main/resources/pruebas/registerG.png)
 
-Nos da el mensaje que se a registrado con éxito
+#### Nos da el mensaje que se a registrado con éxito
 
 ![Descripción de la imagen](src/main/resources/pruebas/registerG1.png)
 
-Si lo intentamos volver a registrar nos da este error
+#### Si lo intentamos volver a registrar nos da este error
 
 ![Descripción de la imagen](src/main/resources/pruebas/registerB.png)
 
-Ahora le cambiamos la contraseña para que no coincidan y también le cambiamos el nombre para que no del mensaje de antes
+#### Ahora le cambiamos la contraseña para que no coincidan y también le cambiamos el nombre para que no del mensaje de antes
 
 ![Descripción de la imagen](src/main/resources/pruebas/registerB1.png)
 
 
 ![Descripción de la imagen](src/main/resources/pruebas/registerB2.png)
 
-Y nos da este error 
+#### Y nos da este error 
 
 ![Descripción de la imagen](src/main/resources/pruebas/registerB3.png)
+
+
+### Usuario con rol USER
+
+#### Ver todas SUS tareas
+
+
+Aqui en el get para obtener todas las tareas solo le saldria sus propias tareas
+![img_1.png](img_1.png)
+
+Y si intentamos ver las tareas de si mismo nos las muestra
+![img_1.png](src/main/resources/pruebas/img_1.png)
+
+
+Pero si intentamos ver el de otro usuario no nos funciona
+![img_2.png](src/main/resources/pruebas/img_2.png)
+
+
+#### Marcar como hecha una tarea propia
+
+
+Si le ponemos 1 tarea nuestra nos la completa
+![img_3.png](src/main/resources/pruebas/img_3.png)
+
+
+Pero si es de otro no nos deja
+![img_4.png](src/main/resources/pruebas/img_4.png)
+
+
+#### Eliminar una tarea propia
+
+Si es nuestra tarea si la elimina
+![img_5.png](src/main/resources/pruebas/img_5.png)
+
+Pero si no es nuestra no
+![img_6.png](src/main/resources/pruebas/img_6.png)
+#### Darse de alta A SÍ MISMO una tarea
+
+
+Como es para el la tarea si la crea
+![img_7.png](src/main/resources/pruebas/img_7.png)
+
+
+Pero cuando no es para el no la crea
+![img.png](src/main/resources/pruebas/img.png)
+
+#### Esto quiere decir que si otro usuario, que no es ADMIN, intenta darle de alta una tarea a otro usuario debería salir una excepción 403 Forbidden
+
+
+### Usuario con rol ADMIN
+
+
+#### Ver todas las tareas
+
+Nos muestra tanto las del usuario123 como las del usuario1
+![img_8.png](src/main/resources/pruebas/img_8.png)
+
+
+#### Eliminar cualquier tarea de cualquier usuario
+
+
+Nos deja eliminar tanto sus propias tareas
+![img_9.png](src/main/resources/pruebas/img_9.png)
+
+
+Como las de los otros
+![img_10.png](src/main/resources/pruebas/img_10.png)
+
+
+#### Dar de alta tareas a cualquier usuario
+
+
+Nos deja crearle tareas a los demás 
+![img_11.png](src/main/resources/pruebas/img_11.png)
+
+
+Y a nosotros
+![img_12.png](src/main/resources/pruebas/img_12.png)

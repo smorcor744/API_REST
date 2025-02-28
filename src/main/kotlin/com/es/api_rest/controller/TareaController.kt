@@ -58,7 +58,7 @@ class TareaController {
         val tareaInsertada = tareaService.insertTareas(authentication,tarea)
         if (tareaInsertada != null){
             return ResponseEntity(tareaInsertada, HttpStatus.CREATED)
-        }else return ResponseEntity(null, HttpStatus.CONFLICT)
+        }else return ResponseEntity(null, HttpStatus.FORBIDDEN)
 
     }
 

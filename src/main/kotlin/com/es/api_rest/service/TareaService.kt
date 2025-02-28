@@ -38,8 +38,9 @@ class TareaService {
     }
 
     fun authenticate(authentication: Authentication, username: String?): Boolean {
+        println(authentication.name)
         if (authentication.authorities.any {it.authority == "ROLE_ADMIN" } ) return true
-        if ( username.isNullOrBlank() && authentication.name == username) {
+        if ( !username.isNullOrBlank() && authentication.name == username) {
             return true
         }
         return false
