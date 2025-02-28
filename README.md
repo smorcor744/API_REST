@@ -152,9 +152,9 @@ Representa una tarea asignada dentro del sistema.
 
 
 Aqui en el get para obtener todas las tareas solo le saldria sus propias tareas
-![img_1.png](img_1.png)
+![img_1.png](src/main/resources/pruebas/2.png)
 
-Y si intentamos ver las tareas de si mismo nos las muestra
+Y si intentamos ver las tareas de sí mismo nos las muestra
 ![img_1.png](src/main/resources/pruebas/img_1.png)
 
 
@@ -168,6 +168,9 @@ Pero si intentamos ver el de otro usuario no nos funciona
 Si le ponemos 1 tarea nuestra nos la completa
 ![img_3.png](src/main/resources/pruebas/img_3.png)
 
+
+Si ya esta completa no nos deja cambiarla 
+![img_2.png](src/main/resources/pruebas/123.png)
 
 Pero si es de otro no nos deja
 ![img_4.png](src/main/resources/pruebas/img_4.png)
