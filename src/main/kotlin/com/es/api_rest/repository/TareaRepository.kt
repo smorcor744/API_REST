@@ -9,7 +9,7 @@ import java.util.*
 interface TareaRepository : MongoRepository<Tareas,String> {
     fun findByUsername(username: String): List<Tareas>
     fun existsByTituloAndUsername(titulo: String, username: String): Boolean
-
+    fun findByUsernameAndTitulo(username: String, titulo: String): Optional<Tareas>
     fun findByTitulo(titulo: String): Optional<Tareas>
 
 }
