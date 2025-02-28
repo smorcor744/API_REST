@@ -225,3 +225,13 @@ Nos deja crearle tareas a los demás
 
 Y a nosotros
 ![img_12.png](src/main/resources/pruebas/img_12.png)
+
+
+
+
+
+## Aqui esta la bd
+
+![img.png](src/main/resources/pruebas/bd.png)
+
+
