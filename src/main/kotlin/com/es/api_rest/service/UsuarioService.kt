@@ -59,7 +59,7 @@ class UsuarioService : UserDetailsService {
         if (!emailPattern.containsMatchIn(usuarioInsertadoDTO.email)) {
             throw Exception("**Error al insertar el Email ${usuarioInsertadoDTO.email}, formato inválido**")
         }
-        if (!usuarioRepository.findByEmail(usuarioInsertadoDTO.email).isEmpty()) {
+        if (!usuarioRepository.findByEmail(usuarioInsertadoDTO.email).isEmpty) {
             throw Exception("**Error al insertar el Email ${usuarioInsertadoDTO.email}, ya existente**")
         }
 

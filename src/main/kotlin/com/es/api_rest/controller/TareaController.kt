@@ -18,12 +18,6 @@ import org.springframework.web.bind.annotation.*
 class TareaController {
 
     @Autowired
-    private lateinit var authenticationManager: AuthenticationManager
-
-    @Autowired
-    private lateinit var usuarioService: UsuarioService
-
-    @Autowired
     private lateinit var tareaService: TareaService
 
     @GetMapping
@@ -34,7 +28,7 @@ class TareaController {
 
         val tareas = tareaService.getAllTareas(authentication)
 
-        return if (tareas != null) ResponseEntity(tareas, HttpStatus.OK) else ResponseEntity(null, HttpStatus.FORBIDDEN)
+        return if (tareas != null) ResponseEntity(tareas, HttpStatus.OK) else ResponseEntity(HttpStatus.FORBIDDEN)
     }
 
     @GetMapping("/{username}")
@@ -46,7 +40,7 @@ class TareaController {
 
         val tareas = tareaService.getTareasByUsername(authentication,username)
 
-        return if (tareas != null) ResponseEntity(tareas, HttpStatus.OK) else ResponseEntity(null, HttpStatus.FORBIDDEN)
+        return if (tareas != null) ResponseEntity(tareas, HttpStatus.OK) else ResponseEntity(HttpStatus.FORBIDDEN)
     }
 
     @PostMapping
