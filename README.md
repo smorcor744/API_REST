@@ -168,6 +168,20 @@ Representa una tarea asignada dentro del sistema.
 #### Con un rol inexistente 
 ![image](https://github.com/user-attachments/assets/c04c189a-0e3c-49f2-8610-3e82672a51fd)
 
+### Pruebas de Login Insomnia
+
+#### Intento logiarme con un usuario que no exite
+![image](https://github.com/user-attachments/assets/e5c7a65c-b7ac-4df2-849b-476aca9334b0)
+
+#### Intento logiarme con un usuario que exite
+
+![image](https://github.com/user-attachments/assets/524c234d-9fa9-4986-b729-27742939d545)
+
+#### Intento logiarme con un usuario que exite pero con la contraseña mal
+
+![image](https://github.com/user-attachments/assets/d573d401-c7e9-490e-95d0-e61332abb1b5)
+
+
 
 ### Usuario con rol USER
 
