@@ -56,17 +56,32 @@ class TareaController {
 
     }
 
+//    @DeleteMapping
+//    fun eliminarTarea(
+//        authentication: Authentication,
+//        httpRequest: HttpServletRequest,
+//        @RequestBody tarea: TareaCompletadaDTO): ResponseEntity<String> {
+//        if (tareaService.delete(authentication, tarea)) {
+//            return ResponseEntity("Tarea eliminada con exito.",HttpStatus.OK)
+//        } else {
+//            return ResponseEntity("No se a podido eliminar esta tarea.",HttpStatus.FORBIDDEN)
+//        }
+//
+//    }
+
     @DeleteMapping
     fun eliminarTarea(
         authentication: Authentication,
         httpRequest: HttpServletRequest,
-        @RequestBody tarea: TareaCompletadaDTO): ResponseEntity<String> {
+        @RequestParam username: String,
+        @RequestParam titulo: String
+    ): ResponseEntity<String> {
+        val tarea = TareaCompletadaDTO(username, titulo)
         if (tareaService.delete(authentication, tarea)) {
-            return ResponseEntity("Tarea eliminada con exito.",HttpStatus.OK)
+            return ResponseEntity("Tarea eliminada con éxito.", HttpStatus.OK)
         } else {
-            return ResponseEntity("No se a podido eliminar esta tarea.",HttpStatus.FORBIDDEN)
+            return ResponseEntity("No se ha podido eliminar esta tarea.", HttpStatus.FORBIDDEN)
         }
-
     }
 
     @PutMapping("/completar")
