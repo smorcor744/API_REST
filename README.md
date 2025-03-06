@@ -146,6 +146,29 @@ Representa una tarea asignada dentro del sistema.
 ![Descripción de la imagen](src/main/resources/pruebas/registerB3.png)
 
 
+### Pruebas de Registro Insomnia
+#### Intentamos meter un usuario con provincia falsa
+![image](https://github.com/user-attachments/assets/ef8ecbdc-df79-4d10-b981-1ca41a5066a9)
+
+#### Ahora con municipio falso
+![image](https://github.com/user-attachments/assets/c1760e1c-92d8-4ec9-a37f-f4060ed9b31d)
+
+#### Ahora bien
+![image](https://github.com/user-attachments/assets/01e02cc3-3be8-46b3-9d57-d75f2d853cac)
+
+#### Con un email que ya existe
+![image](https://github.com/user-attachments/assets/ea8ef1b7-6deb-4bb4-83ec-019d43423ce2)
+
+#### Con un email sin @
+![image](https://github.com/user-attachments/assets/bda96bc8-92f1-45f2-b4f8-2e62821c1cca)
+
+#### Con las contraseñas no iguales
+![image](https://github.com/user-attachments/assets/28022d8b-a327-4669-91de-e8788899aa1b)
+
+#### Con un rol inexistente 
+![image](https://github.com/user-attachments/assets/c04c189a-0e3c-49f2-8610-3e82672a51fd)
+
+
 ### Usuario con rol USER
 
 #### Ver todas SUS tareas
